@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="script.css" />
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo">PUNKHEADED</a>
+      <ul class="navbar">
+        <li id="item1" class="list"><a href="">Web-Projects</a></li>
+        <li id="item2" class="list"><a href="">Gallery</a></li>
+        <li id="item3" class="list"><a href="">About</a></li>
+      </ul>
+    </header>
+    <section id="landing">
+      <img src="lowbar.PNG" alt="" id="lowbar" />
+      <img src="monkey.PNG" alt="" id="monkey" />
+      <img src="moon.PNG" alt="" id="moon" />
+      <img src="stars.PNG" alt="" id="stars" />
+      <img src="title_tag.PNG" alt="" id="title-tag" />
+      <img src="window.PNG" alt="" id="window" />
+    </section>
+
+    <!-- .................................About........................................... -->
+    <section id="about">
+      <div id="content-container">
+        <div id="profile_pic">
+          <img src="profile_pic.PNG" alt="" class="pic" />
+        </div>
+        <div id="intro">
+          Hi, my name is Abhishek.<br />I am a Frontend Developer and a
+          Photographer<br />based in India.<br /><br />My motto is to create
+          while exploring <br />and enhancing the artistic sense of view.
+        </div>
+        <div id="coffee">Let's catch up with a Cup of Coffee</div>
+        <div class="button">
+          <div id="cont">
+            <img src="cont_btn.PNG" alt="" />
+          </div>
+
+          <div id="back_btn">
+            <img src="back_btn.PNG" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .........................................JavaSCRIPT............................................................. -->
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        window.addEventListener("scroll" ,function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = (130 + value*1) + 'px'; 
+        })
+    </script>
+
+  </body>
+</html>
